@@ -1,16 +1,20 @@
 # Syllabus, with teaching notes following the 2017-11-20 Price Lab two-day workshop
 
+<!-- 
+	
 ## Before the workshop
 
 We sent the following email to participants, pointing them toward the installation instructions developed by the Software Carpentry community:
 
-> We are very excited about the Python for Humanists workshop this weekend (Nov. 18-19) and hope you are too! Here are a few things you should know in advance.
+> We are very excited about the Python for Humanists workshop this weekend and hope you are too! Here are a few things you should know in advance.
 
 >- We designed this workshop with the assumption that everyone is an absolute beginner.
 >- To make things go a bit more smoothly in the morning, please install Bash and Python 3.6 or higher on your machine. Instructions for doing both can be found here: http://installation.software-carpentry.org/
 >- We will get started at 10AM. There will be breakfast by 9:30 so feel free to get in a little early so you can eat something.
 
 The workshop had 17 participants on the first day, and (due to illness) 16 on the second day. We originally planned to have a second instructor available to answer questions, but further illness during the weekend of the workshop prevented this from being realized. In general, it was ok having only one instructor, as it was instructive to talk through errors that individual participants were having in front of the group, to model a debugging process (e.g., moving from "I'm seeing an error" to "I'm seeing a *syntax* error" or "I'm seeing a *ModuleNotFound* error," and then diagnosing and correcting the underlying problem together). I have added notes below on areas that did require the workshop to stop (mostly Windows-related cross-platform issues).
+
+-->
 
 ## Day 1
 
