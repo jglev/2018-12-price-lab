@@ -1,4 +1,4 @@
-cd "/home/jacoblevernier/Documents/Teaching/2017-11_Price_Lab_Digital_Humanities_Workshop/unix_shell_additional_files/Extra_Examples"
+cd "/home/jacoblevernier/Documents/Teaching/2018-05-10_Price_Lab_Python_for_Humanists_Workshop/2018-05_Price_Lab_Digital_Humanities_Workshop/unix_shell_additional_files/Extra_Examples"
 
 # Number of Tybalt lines:
 grep "_Tybalt._" ./Romeo_and_Juliet_from_Project_Gutenberg_47960_Notes_Removed.txt | wc --lines
