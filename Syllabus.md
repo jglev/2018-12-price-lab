@@ -1,7 +1,7 @@
 # Syllabus, with teaching notes following the 2017-11-20 Price Lab two-day workshop
 
-<!-- 
-	
+<!--
+
 ## Before the workshop
 
 We sent the following email to participants, pointing them toward the installation instructions developed by the Software Carpentry community:
@@ -9,10 +9,17 @@ We sent the following email to participants, pointing them toward the installati
 > We are very excited about the Python for Humanists workshop this weekend and hope you are too! Here are a few things you should know in advance.
 
 >- We designed this workshop with the assumption that everyone is an absolute beginner.
->- To make things go a bit more smoothly in the morning, please install Bash and Python 3.6 or higher on your machine. Instructions for doing both can be found here: http://installation.software-carpentry.org/
+>- To make things go a bit more smoothly in the morning, please install Bash and Python 3.7 or higher on your machine.
+> 1. Install Python:
+>
+> Follow the instructions for your computer under "Installing Python Using Anaconda" at http://swcarpentry.github.io/python-novice-gapminder/setup/
+>
+> (Don't worry about the other sections, "Getting the Data" or "Starting Python")
+>
+> 2. For Windows users: Install "GitBash" / "Git for Windows"
+>
+> Download and install the software from https://gitforwindows.org/
 >- We will get started at 10AM. There will be breakfast by 9:30 so feel free to get in a little early so you can eat something.
-
-The workshop had 17 participants on the first day, and (due to illness) 16 on the second day. We originally planned to have a second instructor available to answer questions, but further illness during the weekend of the workshop prevented this from being realized. In general, it was ok having only one instructor, as it was instructive to talk through errors that individual participants were having in front of the group, to model a debugging process (e.g., moving from "I'm seeing an error" to "I'm seeing a *syntax* error" or "I'm seeing a *ModuleNotFound* error," and then diagnosing and correcting the underlying problem together). I have added notes below on areas that did require the workshop to stop (mostly Windows-related cross-platform issues).
 
 -->
 
@@ -81,7 +88,7 @@ The workshop was 10:00-17:00 each day. That's 7 hours per day. With a 1 hour lun
             - Example: Keeping track of how many downloads you've made from Google Maps, so that you don't go over their (example) threshold of 5,000 per day.
         7. Libraries/modules (think of browser extension metaphor, plus the metaphor of asking a friend who knows better how to do something (think of Python's `pd.read_csv` syntax))
     - An introduction to `bash`, for navigating around and understanding file trees, and for understanding the basics of how code works.
-        - I drew selectively from the [Software Carpentry "Unix shell" lesson](http://swcarpentry.github.io/shell-novice/) for this section.  
+        - I drew selectively from the [Software Carpentry "Unix shell" lesson](http://swcarpentry.github.io/shell-novice/) for this section.
       (This included attribution to meet the SC CC-BY license terms for their content.)
     - Looking at Python basic syntax
         - General formatting notes (indentation, colons, etc.)
@@ -118,23 +125,23 @@ The workshop was 10:00-17:00 each day. That's 7 hours per day. With a 1 hour lun
 - 14:00-15:00 Introduction to `bash`, to understand how file directory structures work, and to understand the stakes of working with command-line interfaces (i.e., no Recycle Bin, not always prompts to make sure of something, etc.)
     - We talked through `ls`, `cd`, `mkdir`, `touch`, `less`, `head`, `grep`, `rm`, `cp`, `mv`, `wc (-l)`, `man`/`command --help`, and pipes (not necessarily in that order).
         - *Note:* GitBash on Windows does not have `man` installed. `commandname --help` will often work instead.
-- 15:00-17:00 Demonstrating Python 3 syntax for each of the elements in the "toolbox"  
+- 15:00-17:00 Demonstrating Python 3 syntax for each of the elements in the "toolbox"
   We got through `if/elif/else` statements on this day.
   - I used the Query OCLC API example script to show use of an `if` statement (and a `for loop`, though students hadn't seen the syntax for that yet) in real-world code, at the request of one of the participants.
 
 ## Day 2
 
 - 10:00-10:30 Check-in from the previous day
-- 10:30-13:00 Demonstrating Python 3 syntax for each of the elements in the "toolbox"  
+- 10:30-13:00 Demonstrating Python 3 syntax for each of the elements in the "toolbox"
   We got through the remainder of the "toolbox" items (skipping over `while` loops, except just speaking conceptually about them, with the example of counting one's downloads and not going over a threshold).
 - 14:00-16:30 Example scripts:
     - The motivation of this portion: *We were looking through existing, real-world scripts, of the type participants will need to understand when they view others' code, modify others' code, or read StackOverflow and similar help posts online. I.e., teaching "don't panic, you can figure this out."*
-    - We practiced a three-part process for writing code for participants' own projects:  
+    - We practiced a three-part process for writing code for participants' own projects:
       (This was introduced on the second day -- before looking at each of the example scripts, I explained the goal, and we wrote out a narrative and then a checklist together, and then checked off items from that list as we went through the example script).
         1. Write out what you want to do *in narrative form, as though you are explaining it to a kindergartner.*
         2. Take each phrase from the paragraph you've written above, and turn it into a checklist item (still in lay language), identifying key phrases from your paragraph to translate into technical coding terms *by drawing from our "toolkit" of six concepts* (e.g., "go through *each of*..." can be translated "create a *"for loop"* over...").
         3. Write code from your checklist items.
-    - Converting files in a directory from MP3 to WAV  
+    - Converting files in a directory from MP3 to WAV
       *Notes:*
         - This script will not work if `ffmpeg` or `avconv` is not installed. Thus, students needed to just look on with me demonstrating when it came time to run the `AudioSegment()` command in the script.
         - For installing `pydub` (and other modules) using `pip`:
