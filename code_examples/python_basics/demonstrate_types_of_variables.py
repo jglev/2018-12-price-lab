@@ -30,7 +30,7 @@ help(round)
 
 dir(test_4)
 
-123.capitalize()
+'123'.capitalize()
 
 
 test_4.capitalize()
